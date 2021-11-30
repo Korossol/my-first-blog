@@ -15,8 +15,24 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from django.views.static import serve
+import os
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
 ]
+
+
+# Serve the favicon - Keep for later
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+urlpatterns += [
+    path('favicon.ico', serve, {
+            'path': 'favicon.ico',
+            'document_root': os.path.join(BASE_DIR, 'blog/static'),
+        }
+    ),
+]
+
