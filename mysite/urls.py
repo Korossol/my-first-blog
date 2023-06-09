@@ -21,18 +21,27 @@ import os
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('blog.urls')),
+    #path('', include('blog.urls')),
+    path('blog', include('blog.urls')),
+    path('videos', include('videos.urls')),
+    #path('home', include('home.urls')),
+    path('',include('home.urls')),
+
+
+
+
 ]
 
 
 # Serve the favicon - Keep for later
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-urlpatterns += [
-    path('favicon.ico', serve, {
-            'path': 'favicon.ico',
-            'document_root': os.path.join(BASE_DIR, 'blog/static'),
-        }
-    ),
-]
+#urlpatterns += [
+ #   path('favicon.ico', serve, {
+  #          'path': 'favicon.ico',
+   #         'document_root': os.path.join(BASE_DIR, 'blog/static'),
+
+    #    }
+   # ),
+#]
 

@@ -1,10 +1,9 @@
-
-
 body {
     
     background-color: #2d2727;
     color: #f8e7ae;
     font-family: 'Arial','Times New Roman', Times, serif;
+    
     /*ZOUKWAY Main font is 'Stencil std' and the other one 'Marbre'*/
    /* background: white url("images/zoukway_logo.jpg") no-repeat;*/
     /*background: #2d2727 url('/static/images/zoukway_logo.jpg')no-repeat center bottom;
@@ -15,17 +14,17 @@ body {
    background-position: center; 
 
    
-  
+
+   
+ 
+ 
+
   }
-
-
   .card {
     
-    background-color: rgb(88, 58, 221);
+    background-color: rgb(18, 24, 107);
 
 }
-  
-
 
  
   #first {
@@ -34,5 +33,6 @@ body {
       padding-left: 42%;
 
   }
- 
+
   
+ 

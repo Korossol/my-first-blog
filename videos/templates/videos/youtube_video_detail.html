@@ -1,0 +1,66 @@
+
+{% extends 'videos/base_menu.html' %}
+
+
+{% block title %}{{ settings.APP_NAME }}{% endblock %}
+
+{% block content %}
+
+<!--to enable youtube embed-->
+<!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+-->
+
+
+
+
+<h1>{{ youtube_video.name }}</h1>
+<p>
+    {{ youtube_video.name }}
+</p>
+
+<p>
+
+
+
+
+</p>
+
+
+
+   
+  <div class="card bg-warning">
+    <iframe src="https://www.youtube.com/embed/{{ youtube_video.url }}" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+    <div class="card-body">
+      <h5 class="card-title"> {{ youtube_video.name }}</h5>
+      <p class="card-text">  on our list since : {{ youtube_video.date_published }} </p>
+      <a href=https://www.youtube.com/watch?v={{ youtube_video.url }} class="btn btn-primary">Go on Youtube</a>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+  final
+
+
+<div class="container">
+  <h2>{{ youtube_video.name }}</h2>
+  <p>on our list since : {{ youtube_video.date_published }}</p>
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ youtube_video.url }}"></iframe>
+  </div>
+</div>
+
+</body>
+</html>
+
+  
+
+
+{% endblock %}
