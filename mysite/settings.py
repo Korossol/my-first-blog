@@ -23,9 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'x9*yox!%7$ae%$)-nsnsx8&cg%u6@_q-vs&0v3+*8z#$&t+dbf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
+DEBUG= False
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+#We add 'www.zoukway.com' otherwise an alert came up on the the z
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com','www.zoukway.com']
 
 
 # Application definition

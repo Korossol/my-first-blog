@@ -22,8 +22,8 @@ import os
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', include('blog.urls')),
-    path('blog', include('blog.urls')),
-    path('videos', include('videos.urls')),
+    #path('blog', include('blog.urls')),
+    #path('videos', include('videos.urls')),
     #path('home', include('home.urls')),
     path('',include('home.urls')),
 
